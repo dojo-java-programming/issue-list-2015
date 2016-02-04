@@ -9,7 +9,7 @@
 - [X] Create IssueId
 - [X] Create Issue
 - [X] Create IssueBuilder
-- [ ] Create IssueRepository
+- [X] Create IssueRepository
 
 
 - src/main/java

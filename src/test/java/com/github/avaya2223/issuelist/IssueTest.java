@@ -143,30 +143,18 @@ public class IssueTest {
 	
 	@Test
 	public void equals() throws Exception {
-		Issue issueA = createIssue();
-		Issue issueB = createIssue();
+		Issue issueA = createIssue("issue-2");
+		Issue issueB = createIssue("issue-2");
 
 		assertEquals(issueA, issueB);
-//		assertTrue(issueA.equals(issueB));
+		assertTrue(issueA.equals(issueB));
 	}
 
 
-	public static Issue createIssue() {
-		DateFormat dateFormat = new SimpleDateFormat("yyyy.MM.dd HH:mm");
-		IssueId issueId = new IssueId("sample-22");
-		String title = "My first issue title";
-		String description = "Some description";
-		Status status = Status.OPEN;
-		Priority priority = Priority.HIGH;
-		Date creationDate = null;
-		try {
-			creationDate = dateFormat.parse("2015.12.10 16:45");
-		}
-		catch (ParseException e) {
-			fail(e.getMessage());
-		}
-		IssueType type = IssueType.BUG;
-		return new Issue(issueId, title, description, status, priority, creationDate, type);
+	public static Issue createIssue(String issueId) {
+		return new IssueBuilder().setCreationDate("2015.12.10 16:45").setDescription("Some description")
+				.setIssueId(issueId).setIssueType(IssueType.BUG).setPriority(Priority.HIGH)
+				.setTitle("My first issue title").setStatus(Status.OPEN).create();
 	}
 
 }
