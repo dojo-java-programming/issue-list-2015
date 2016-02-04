@@ -8,7 +8,7 @@
 - [X] Create IssueType
 - [X] Create IssueId
 - [X] Create Issue
-- [ ] Create IssueBuilder
+- [X] Create IssueBuilder
 - [ ] Create IssueRepository
 
 

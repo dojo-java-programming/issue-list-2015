@@ -47,6 +47,40 @@ public class Issue {
 		this.type = type;
 	}
 
+	public Issue(IssueBuilder bldr) {
+		final String titleCln = StringUtils.trimToNull(bldr.getTitle());
+		final String descriptionCln = StringUtils.trimToNull(bldr.getDescription());
+		if (bldr.getIssueId() == null) {
+			throw new IllegalArgumentException("Argument 'issueId' should not be null.");
+		}
+		if (titleCln == null) {
+			throw new IllegalArgumentException("Argument 'title' should not be null.");
+		}
+		if (descriptionCln == null) {
+			throw new IllegalArgumentException("Argument 'description' should not be null.");
+		}
+		if (bldr.getStatus() == null) {
+			throw new IllegalArgumentException("Argument 'status' should not be null.");
+		}
+		if (bldr.getPriority() == null) {
+			throw new IllegalArgumentException("Argument 'priority' should not be null.");
+		}
+		if (bldr.getCreationDate() == null) {
+			throw new IllegalArgumentException("Argument 'creationDate' should not be null.");
+		}
+		if (bldr.getType() == null) {
+			throw new IllegalArgumentException("Argument 'type' should not be null.");
+		}
+				
+		this.issueId = bldr.getIssueId();
+		this.title = titleCln;
+		this.description = descriptionCln;
+		this.status = bldr.getStatus();
+		this.priority = bldr.getPriority();
+		this.creationDate = bldr.getCreationDate();
+		this.type = bldr.getType();
+	}
+
 	public IssueId getIssueId() {
 		return issueId;
 	}
