@@ -11,6 +11,13 @@
 - [X] Create IssueBuilder
 - [X] Create IssueRepository
 
+- [ ] Inlezen van CSV
+- [ ] Aanmaken van rapport HTML
+- [ ] Aanmaken van rapport PDF
+
+- [ ] get all issues by IssueType
+- [ ] get all issues by Status
+
 
 - src/main/java
 - src/test/java
