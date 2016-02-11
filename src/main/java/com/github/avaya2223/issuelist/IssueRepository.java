@@ -3,6 +3,8 @@ package com.github.avaya2223.issuelist;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.github.avaya2223.issuelist.domain.Issue;
+
 public class IssueRepository {
 	private List<Issue> issues = new ArrayList<Issue>();
 

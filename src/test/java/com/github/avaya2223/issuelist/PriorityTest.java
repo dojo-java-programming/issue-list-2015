@@ -4,6 +4,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import com.github.avaya2223.issuelist.domain.Priority;
+
 public class PriorityTest {
  
 	@Test

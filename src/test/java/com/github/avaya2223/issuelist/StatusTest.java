@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import com.github.avaya2223.issuelist.Status;
+import com.github.avaya2223.issuelist.domain.Status;
 
 public class StatusTest {
 

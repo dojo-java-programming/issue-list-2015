@@ -1,4 +1,4 @@
-package com.github.avaya2223.issuelist;
+package com.github.avaya2223.issuelist.domain;
 
 import java.util.regex.Pattern;
 

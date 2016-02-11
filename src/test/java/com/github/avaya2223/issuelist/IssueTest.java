@@ -10,6 +10,13 @@ import java.util.Date;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import com.github.avaya2223.issuelist.domain.Issue;
+import com.github.avaya2223.issuelist.domain.IssueBuilder;
+import com.github.avaya2223.issuelist.domain.IssueId;
+import com.github.avaya2223.issuelist.domain.IssueType;
+import com.github.avaya2223.issuelist.domain.Priority;
+import com.github.avaya2223.issuelist.domain.Status;
+
 public class IssueTest {
 
 	@Test

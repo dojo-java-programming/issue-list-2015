@@ -4,6 +4,8 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
+import com.github.avaya2223.issuelist.domain.Issue;
+
 public class IssueRepositoryTest {
 
 	@Test

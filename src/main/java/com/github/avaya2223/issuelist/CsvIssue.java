@@ -4,6 +4,9 @@ import java.util.Date;
 
 import org.csveed.annotations.CsvDate;
 
+import com.github.avaya2223.issuelist.domain.Issue;
+import com.github.avaya2223.issuelist.domain.IssueBuilder;
+
 public class CsvIssue {
 	private String priority;
 	private String status;

@@ -5,6 +5,8 @@ import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
+import com.github.avaya2223.issuelist.domain.IssueId;
+
 public class IssueIdTest {
 	
 	@Test
