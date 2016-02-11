@@ -9,4 +9,10 @@ public class IssueListAppTest {
 		String filePath = "src/test/resources/issuelist.csv";
 		IssueListApp.main(new String[]{filePath});
 	}
+	
+	@Test(expected=IllegalArgumentException.class)
+	public void mainNonExistingFile() throws Exception {
+		String filePath = "src/test/resources/issuelistNonExisting.csv";
+		IssueListApp.main(new String[]{filePath});
+	}
 }
