@@ -56,5 +56,16 @@ public class CsvIssue {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	
+
+	public Issue create() {
+		return new IssueBuilder()
+				.setTitle(getTitle())
+				.setDescription(getDescription())
+				.setIssueId(getIssueId())
+				.setIssueType(getIssueType())
+				.setStatus(getStatus())
+				.setPriority(getPriority())
+				.setCreationDate(getCreationDate())
+				.create();
+	}
 }

@@ -43,15 +43,7 @@ public class CsvIssueRepository {
 			
 			for (CsvIssue csvIssue : csvIssues) {
 				System.out.println(csvIssue.getIssueId());
-				issueRepository.add(new IssueBuilder()
-					.setTitle(csvIssue.getTitle())
-					.setDescription(csvIssue.getDescription())
-					.setIssueId(csvIssue.getIssueId())
-					.setIssueType(csvIssue.getIssueType())
-					.setStatus(csvIssue.getStatus())
-					.setPriority(csvIssue.getPriority())
-					.setCreationDate(csvIssue.getCreationDate())
-					.create());
+				issueRepository.add(csvIssue.create());
 //				issueRepository.add(issueBuilder.create());
 			}
 		} catch (FileNotFoundException e) {

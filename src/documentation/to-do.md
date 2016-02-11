@@ -10,9 +10,9 @@
 - [X] Create Issue
 - [X] Create IssueBuilder
 - [X] Create IssueRepository
-- [ ] Create CsvIssueRepository
+- [X] Create CsvIssueRepository
 
-- [ ] Inlezen van CSV
+- [X] Inlezen van CSV
 - [ ] Aanmaken van rapport HTML
 - [ ] Aanmaken van rapport PDF
 
