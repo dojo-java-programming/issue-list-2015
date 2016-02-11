@@ -17,7 +17,11 @@
 			<artifactId>commons-lang3</artifactId>
 			<version>3.4</version>
 		</dependency>
-		
+		<dependency>
+			<groupId>org.csveed</groupId>
+			<artifactId>csveed</artifactId>
+			<version>0.4.0</version>
+		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-simple</artifactId>
@@ -55,7 +59,7 @@
 						</manifest>
 					</archive>
 				</configuration>
-			</plugin>			
+			</plugin>
 		</plugins>
 	</build>
 </project>
