@@ -1,10 +1,13 @@
-package com.github.avaya2223.issuelist;
+package com.github.avaya2223.issuelist.repository.csv;
 
 import static org.junit.Assert.*;
 
 import java.io.File;
 
 import org.junit.Test;
+
+import com.github.avaya2223.issuelist.repository.IssueRepository;
+import com.github.avaya2223.issuelist.repository.csv.CsvIssueRepository;
 
 public class CsvIssueRepositoryTest {
 

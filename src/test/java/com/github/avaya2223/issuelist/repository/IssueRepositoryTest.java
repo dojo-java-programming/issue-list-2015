@@ -1,10 +1,12 @@
-package com.github.avaya2223.issuelist;
+package com.github.avaya2223.issuelist.repository;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
 import com.github.avaya2223.issuelist.domain.Issue;
+import com.github.avaya2223.issuelist.domain.IssueTest;
+import com.github.avaya2223.issuelist.repository.IssueRepository;
 
 public class IssueRepositoryTest {
 

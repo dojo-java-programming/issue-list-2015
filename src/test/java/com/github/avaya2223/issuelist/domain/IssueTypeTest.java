@@ -1,4 +1,4 @@
-package com.github.avaya2223.issuelist;
+package com.github.avaya2223.issuelist.domain;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;

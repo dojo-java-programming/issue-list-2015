@@ -1,4 +1,4 @@
-package com.github.avaya2223.issuelist;
+package com.github.avaya2223.issuelist.repository.csv;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -10,6 +10,8 @@ import org.csveed.api.CsvClient;
 import org.csveed.api.CsvClientImpl;
 import org.csveed.bean.BeanInstructionsImpl;
 import org.csveed.bean.ColumnNameMapper;
+
+import com.github.avaya2223.issuelist.repository.IssueRepository;
 
 public class CsvIssueRepository {
 

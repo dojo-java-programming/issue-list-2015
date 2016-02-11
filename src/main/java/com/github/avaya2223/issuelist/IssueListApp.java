@@ -2,6 +2,9 @@ package com.github.avaya2223.issuelist;
 
 import java.io.File;
 
+import com.github.avaya2223.issuelist.repository.IssueRepository;
+import com.github.avaya2223.issuelist.repository.csv.CsvIssueRepository;
+
 public class IssueListApp {
 
 	public static void main(String[] args) {

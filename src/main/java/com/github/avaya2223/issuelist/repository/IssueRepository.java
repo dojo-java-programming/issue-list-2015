@@ -1,4 +1,4 @@
-package com.github.avaya2223.issuelist;
+package com.github.avaya2223.issuelist.repository;
 
 import java.util.ArrayList;
 import java.util.List;
