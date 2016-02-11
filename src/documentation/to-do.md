@@ -11,6 +11,7 @@
 - [X] Create IssueBuilder
 - [X] Create IssueRepository
 - [X] Create CsvIssueRepository
+- [ ] Create App, input: csv-file-path
 
 - [X] Inlezen van CSV
 - [ ] Aanmaken van rapport HTML
