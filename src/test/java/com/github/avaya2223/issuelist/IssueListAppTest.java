@@ -15,4 +15,12 @@ public class IssueListAppTest {
 		String filePath = "src/test/resources/issuelistNonExisting.csv";
 		IssueListApp.main(new String[]{filePath});
 	}
+	
+	//filePath is geen file (maar een map)
+	@Test(expected=IllegalArgumentException.class)
+	public void mainNotFile() throws Exception {
+		String filePath = "src/test/resources";
+		IssueListApp.main(new String[]{filePath});
+	}
+	
 }
