@@ -11,17 +11,12 @@
 - [X] Create IssueBuilder
 - [X] Create IssueRepository
 - [X] Create CsvIssueRepository
-- [ ] Create App, input: csv-file-path
+- [.] Create App, input: csv-file-path
 
-- [X] Inlezen van CSV
-- [ ] Aanmaken van rapport HTML
-- [ ] Aanmaken van rapport PDF
+- [X] Read issues from CSV
+- [.] Create HTML report
+- [ ] Create PDF report
 
 - [ ] get all issues by IssueType
 - [ ] get all issues by Status
-
-
-- src/main/java
-- src/test/java
-- src/test/resources
 
