@@ -2,8 +2,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.github.avaya2223.issue-list</groupId>
-	<artifactId>issue-list-rik</artifactId>
+	<groupId>com.github.dojo.java.issue-list</groupId>
+	<artifactId>issue-list-2015</artifactId>
 	<version>0.1.0-SNAPSHOT</version>
 
 	<properties>
