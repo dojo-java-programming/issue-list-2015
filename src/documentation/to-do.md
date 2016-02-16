@@ -16,8 +16,13 @@
 - [X] Read issues from CSV
 - [X] Create HTML report
 - [ ] Create JSON report
-- [ ] Create PDF report
+
+- [ ] Read issues from [H2 database](http://www.h2database.com/) table
+- [ ] Read issues from [HSQLDB database](http://hsqldb.org/) table
+
+- [ ] Use Spring database template
 
 - [ ] get all issues by IssueType
 - [ ] get all issues by Status
 
+- [ ] Create PDF report
