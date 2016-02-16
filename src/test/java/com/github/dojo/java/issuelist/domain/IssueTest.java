@@ -1,13 +1,7 @@
 package com.github.dojo.java.issuelist.domain;
 
-import static org.junit.Assert.*;
-
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import org.junit.Ignore;
 import org.junit.Test;
 
 import com.github.dojo.java.issuelist.issuelist.domain.Issue;
@@ -16,6 +10,9 @@ import com.github.dojo.java.issuelist.issuelist.domain.IssueId;
 import com.github.dojo.java.issuelist.issuelist.domain.IssueType;
 import com.github.dojo.java.issuelist.issuelist.domain.Priority;
 import com.github.dojo.java.issuelist.issuelist.domain.Status;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class IssueTest {
 
