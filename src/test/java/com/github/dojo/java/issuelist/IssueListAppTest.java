@@ -1,4 +1,4 @@
-package com.github.dojo.java.issuelist.issuelist;
+package com.github.dojo.java.issuelist;
 
 import org.junit.Test;
 

@@ -1,8 +1,8 @@
 package com.github.dojo.java.issuelist;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.io.OutputStreamWriter;
 import java.io.Writer;
 import java.util.HashMap;
 import java.util.Map;
@@ -40,30 +40,32 @@ public class IssueListRunner {
 
 	}
 
-	public void execute(File file) throws TemplateNotFoundException, MalformedTemplateNameException, ParseException, IOException, TemplateException {
-		if(!file.exists()){
-			throw new IllegalArgumentException("Het bestand: '" + file + "' bestaat niet!");
+	public void execute(final File inputCsvFile, final File outputFile) throws TemplateNotFoundException, MalformedTemplateNameException, ParseException, IOException, TemplateException {
+		if(!inputCsvFile.exists()){
+			throw new IllegalArgumentException("Het bestand: '" + inputCsvFile + "' bestaat niet!");
 		}
 
-		if(!file.isFile()){
-			throw new IllegalArgumentException("De '" + file + "' is geen bestand!");
+		if(!inputCsvFile.isFile()){
+			throw new IllegalArgumentException("De '" + inputCsvFile + "' is geen bestand!");
 		}
 		
-		if(!file.canRead()){
-			throw new IllegalArgumentException("De '" + file + "' is niet leesbaar!");
+		if(!inputCsvFile.canRead()){
+			throw new IllegalArgumentException("De '" + inputCsvFile + "' is niet leesbaar!");
 		}
 		
-		IssueRepository issueRepo = CsvIssueRepository.create(file);
+		IssueRepository issueRepo = CsvIssueRepository.create(inputCsvFile);
 		System.out.println(issueRepo.size());
 		Template temp = cfg.getTemplate("issue-list.ftl");
-		
-		Writer out = new OutputStreamWriter(System.out);
+
+		System.out.println("-----[ Begin ]-----");
+		Writer out = new FileWriter(outputFile);//new OutputStreamWriter(System.out);
 		temp.process(createModel(issueRepo), out);
+		System.out.println("\n-----[ End ]-----");
 	}
 
 	private Map<String, Object> createModel(IssueRepository issueRepo) {
 		Map<String, Object> root = new HashMap<>();
-		root.put("name", "tekst");
+		root.put("name", "Issue list");
 		root.put("issues", issueRepo.getAll());
 		return root;
 	}

@@ -12,9 +12,10 @@ public class IssueListApp {
 
 	public static void main(String[] args) throws TemplateNotFoundException, MalformedTemplateNameException, ParseException, IOException, TemplateException {
 		System.out.println(args[0]);
-		File file = new File(args[0]);
+		File inputCsvFile = new File(args[0]);
+		File outputHtmlFile = new File(args[1]);
 
-		new IssueListRunner().execute(file);
+		new IssueListRunner().execute(inputCsvFile, outputHtmlFile);
 	}
 
 }

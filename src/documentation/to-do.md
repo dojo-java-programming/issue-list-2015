@@ -14,7 +14,8 @@
 - [.] Create App, input: csv-file-path
 
 - [X] Read issues from CSV
-- [.] Create HTML report
+- [X] Create HTML report
+- [ ] Create JSON report
 - [ ] Create PDF report
 
 - [ ] get all issues by IssueType
