@@ -13,7 +13,8 @@ public enum Priority {
 		}
 		try {
 			return valueOf(priorityCln.toUpperCase());
-		} catch (IllegalArgumentException ex) {
+		}
+		catch (IllegalArgumentException ex) {
 			throw new IllegalArgumentException("Argument 'priorityStr' with value '"
 					+ priorityCln + "' is not a known Priority. Known values are ["
 					+ getValues() + "]");
