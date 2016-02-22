@@ -17,6 +17,17 @@
 - [X] Create HTML report
 - [ ] Create JSON report
 
+- [ ] Create an App with command line argument [JCommander](http://jcommander.org/)
+
+- [ ] Introduce GitHub Issues / Tasks
+- [ ] GitHub Issues / Tasks - Add Labels
+- [ ] Connect GitHub Issues / Tasks to Eclipse
+
+- [ ] Create Maven Plug-in
+
+- [ ] Continuous Integration (CI) (with Jenkins or other) for multiple Maven life-cycle targets
+
+- [ ] Create IssueRepository interface
 - [ ] Read issues from [H2 database](http://www.h2database.com/) table
 - [ ] Read issues from [HSQLDB database](http://hsqldb.org/) table
 
@@ -26,3 +37,12 @@
 - [ ] get all issues by Status
 
 - [ ] Create PDF report
+
+
+## Mini Teams (2 or 3 persons) implement GitHub tasks
+
+- [ ] Working together on a GitHub project
+  - GitHub - Fork
+  - Create code
+  - Push code
+  - Create GitHub Pull request
