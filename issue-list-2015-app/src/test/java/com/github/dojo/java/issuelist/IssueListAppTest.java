@@ -3,7 +3,6 @@ package com.github.dojo.java.issuelist;
 import org.junit.Test;
 
 public class IssueListAppTest {
-
 	private static final String ISSUES_FILE = "--issues-file";
 	private static final String REPORT_TYPE = "--report-type";
 	private static final String REPORT_FILE = "--report-file";
