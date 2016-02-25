@@ -13,6 +13,7 @@
 
 	<modules>
 		<module>issue-list-2015-app</module>
+		<module>issue-list-2015-maven-plugin</module>
 	</modules>
 
 	<dependencyManagement>
